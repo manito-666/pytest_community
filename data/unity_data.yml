@@ -1,0 +1,23 @@
+test_url:
+  - /forum_b_api_unity/gateway_open_api/web/user/pms?game_cd=1001
+  - /forum_b_api_unity/article/query
+  - /
+
+test_login:
+#期望结果, 期望返回码, 期望返回uid信息
+  - [True,0,"634"]
+
+
+#page, page_size, title, type, status, start_time, end_time, game_cd,期望结果, 期望返回码, 期望返回信息
+test_invitation1:
+  - [1,20," ",0,0,1644249600,1646927999,"1001",True,0,"success"]
+test_invitation2:
+  - [1,20," ",1,1,1644249600,1646927999,"1001",True,0,"success"]
+test_invitation3:
+  - [1,20,"测试",0,0,1644249600,1646927999,"1001",True,0,"success"]
+
+
+
+
+test_publish:
+  - []
