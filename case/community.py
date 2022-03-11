@@ -1,4 +1,8 @@
 #coding=utf-8
+import os,sys
+Path = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(Path)[0]
+sys.path.append(rootPath)
 from common.result_base import ResultBase
 from common.base import user
 from common.logger import log
