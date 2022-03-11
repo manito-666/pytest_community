@@ -1,5 +1,8 @@
 import pytest
-import os
+import os,sys
+Path = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(Path)[0]
+sys.path.append(rootPath)
 from common.read_data import r
 import allure
 from common.logger import log
